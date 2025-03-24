@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      .container {
+        margin: 100px auto;
+        max-width: 400px;
+        text-align: center;
+      }
+      #box {
+        background-color: rgb(169, 234, 234);
+        padding: 24px;
+        border-radius: 5px;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+      }
+      h1 {
+        margin-bottom: 20px;
+      }
+      #form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      input {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+      }
+      button {
+        padding: 13px;
+        border-radius: 5px;
+        border: none;
+        background-color: rgb(0, 153, 255);
+        font-size: 15px;
+        cursor: pointer;
+        color: white;
+      }
+      #footer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+      }
+      .forgot,
+      .signUp {
+        color: #2885ff;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="box">
+        <h1>Login</h1>
+        <form id="form">
+          <label>Email:</label>
+          <input id="email" type="email" placeholder="Enter your email address" required />
+
+          <label>Password:</label>
+          <input id="password" type="password" placeholder="Enter your password" required />
+
+          <button type="submit">Login</button>
+
+          <div id="footer">
+            <p class="forgot">Forgot password?</p>
+            <p class="signUp">SignUp</p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./coban3.js">
+    
+    </script>
+  </body>
+</html>

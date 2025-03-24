@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách nhân viên</title>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+table {
+  width: 60%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: left;
+}
+th {
+  background-color: rgb(233, 226, 226);
+}
+.pagination button {
+  margin: 5px;
+  padding: 5px 10px;
+}
+.active {
+  background-color: rgb(144, 144, 224);
+  color: white;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Danh sách nhân viên Rikkei</h1>
+    <input type="text" id="nameInput" placeholder="Tên nhân viên">
+    <input type="text" id="jobInput" placeholder="Chức vụ">
+    <button id="btnAdd">Thêm nhân viên</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Tên</th>
+                <th>Chức vụ</th>
+            </tr>
+        </thead>
+        <tbody id="employeeTable"></tbody>
+    </table>
+
+    <div class="pagination">
+        <button id="btnPrev">Previous</button>
+        <span id="pages"></span>
+        <button id="btnNext">Next</button>
+    </div>
+    <script src="./luyen5.js"></script>
+</body>
+</html>

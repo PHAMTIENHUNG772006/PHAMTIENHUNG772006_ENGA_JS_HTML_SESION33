@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Management</title>
+    <style>
+      input, select, button {
+        padding: 10px;
+        border-radius: 5px;
+        border: 0.5px solid rgb(0, 200, 255);
+        margin: 5px;
+      }
+      button {
+        background-color: rgb(175, 196, 202);
+        color: white;
+        cursor: pointer;
+      }
+      h1 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .box {
+        margin: auto;
+        background-color: white;
+        text-align: center;
+        width: 800px;
+        padding: 30px;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+      }
+      thead {
+        background-color: rgb(222, 212, 212);
+      }
+      th {
+        padding: 20px 40px 20px 40px;
+        text-align: center;
+      }
+      #box-button{
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h1>Task Management</h1>
+        <form id="taskForm">
+          <input id="content" type="text" placeholder="Content" required />
+          <input id="date" type="date" required />
+          <select id="select" required>
+            <option value="">Choose status</option>
+            <option value="Pending">Pending</option>
+            <option value="Completed">Completed</option>
+          </select>
+          <input id="name" type="text" placeholder="Username" required />
+          <button type="submit">Submit</button>
+        </form>
+        <br />
+        <table id="task-container">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Content</th>
+              <th>Due date</th>
+              <th>Status</th>
+              <th>Assigned to</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="tbody">
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="./coban2.js"></script>
+  </body>
+</html>
