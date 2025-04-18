@@ -3,6 +3,7 @@ let inputPassword = document.querySelector("#password");
 let confirmPass =document.querySelector("#confirmPassword");
 let btnButtonElement = document.querySelector("#btnSubmit")
 
+
 btnButtonElement.addEventListener("click" ,function(){
     let email = inputEmail.value;
     let password = inputPassword.value;
